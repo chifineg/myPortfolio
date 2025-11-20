@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Currency Converter — Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="demo-container">
+        <h1>Currency Converter (Demo)</h1>
+        <p class="muted">This is a lightweight demo using a public rates API. Replace with your React app or
+            server-driven app in production.</p>
+
+        <div class="converter">
+            <div class="row">
+                <label>From:
+                    <select id="fromCurr"></select>
+                </label>
+                <label>To:
+                    <select id="toCurr"></select>
+                </label>
+            </div>
+            <div class="row">
+                <input id="amount" type="number" value="1" />
+                <button id="convertBtn">Convert</button>
+            </div>
+            <div id="result" class="result">—</div>
+        </div>
+
+        <p class="muted">Note: This demo uses ExchangeRate-API.com (with my personal API key).</p>
+        <p><a href="../.." class="btn">Back to portfolio</a></p>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
